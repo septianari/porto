@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 
 import { Providers } from '@/components/providers';
 import Background from '@/components/layouts/Background';
-import { Inter, M_PLUS_Rounded_1c } from 'next/font/google';
+import { Inter, M_PLUS_Rounded_1c, Bitcount_Grid_Double, Tourney } from 'next/font/google';
 import type { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -11,6 +11,12 @@ const mPlusRounded = M_PLUS_Rounded_1c({
   subsets: ['latin'],
   weight: ['300', '700'],
   variable: '--font-mplus-rounded',
+});
+
+const bitcountGrid = Tourney({
+  weight: '800',
+  subsets: ['latin'],
+  variable: '--font-bitcount',
 });
 
 export const metadata: Metadata = {
@@ -28,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${mPlusRounded.variable}`} suppressHydrationWarning>
+      <body className={`${inter.className} ${mPlusRounded.variable} ${bitcountGrid.variable}`} suppressHydrationWarning>
         <Providers>
           <Background />
           {children}
