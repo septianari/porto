@@ -37,7 +37,7 @@ export default function Home() {
         {/* To enable the 3D hero section, import ThreeBackground from '@/components/ui/ThreeBackground' and render it here. */}
 
         <Section delay={0.1}>
-          <Box
+          {/* <Box
             borderRadius="lg"
             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
             p={3}
@@ -45,9 +45,8 @@ export default function Home() {
             textAlign="center"
             css={{ backdropFilter: 'blur(10px)' }}
           >
-            {/* Hello, I&apos;m a software engineer based in Indonesia! */}
             &apos; Hello World! &apos;
-          </Box>
+          </Box> */}
 
           <Box display={{ md: 'flex' }}>
             <Box flexGrow={1}>
